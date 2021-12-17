@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nos Fiches Métiers</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+  @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;700 & display=swap');
+		* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family : 'Poppins', sans-serif ;
+  padding: 40px;
+  background:#ddd;
+  line-height: 1.5;
+  
+}
+.head {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  color: white;
+}
+
+/* Style de la barre de navigation topnav */
+.topnav 
+{
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style des liens topnav */
+.topnav a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* la couleur du topnav */
+.topnav a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+/*Barre de navigation recherche*/
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/*listes deroulantes*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.footer{
+  background-color: #ffffff;
+  padding: 20px;
+  text-align:;
+  margin-top: 15px;
+  
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-weight: 500;
+  position: relative;
+
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #blue;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: blue;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: blue;
+}
+ /*responsive*/
+ @media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+ }
+
+ @media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+ }
+ul{
+  list-style: none;
+
+}
+
+/*empilage des div*/
+.content-collap {
+ float: left;
+  width: 20%;
+  height: 200px;
+}
+.content-collaps {
+  float: left;
+  width: 80%;
+  height: 200px;
+  background-color: #f1f1f1;
+  padding-left: 25px;
+}
+.content-collap img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.content-collap img:hover {opacity: 0.7;}
+.content div h4 {text-decoration: underline;}
+
+@media screen and (max-width: 800px) 
+{
+  .content-collap, .content-collaps 
+  {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*pliables animés*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* cookies*/
+.cookie-container{
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 100ms;
+}
+.cookie-container.active {
+  bottom: 0;
+}
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cookie-btn:hover {
+  background: rgba(47, 54, 64, 0.39);
+}
+.btn-cookie{
+ background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cookie-btn a:link {
+text-decoration: none;}
+.btn-cookie:hover {
+ background: rgba(47, 54, 64, 0.39); 
+}
+/* fenêtre modale*/
+#box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(55, 55, 55, 0.5);
+  display: none;
+}
+#box:target {
+display: block;
+}
+#modale a {
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#modale h2, #modale p, #modale h4, #modale li {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#modale {
+  background-color: #ecf0f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 5px;
+  border-radius: 6px;
+  width: 600px;
+
+}
+#modale ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+
+}
+#modale ul li {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 15px;
+  text-decoration: initial;
+}
+#modale-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #c0c0c0;
+}
+#modale-footer button {
+  font-size: 20px;
+}
+/*Toggle switch*/
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliders {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliders:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#modale input:checked + .sliders {
+  background-color: #2196F3;
+}
+
+#modale input:focus + .sliders {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+#modale input:checked + .sliders:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.sliders.rounds {
+  border-radius: 17px;
+}
+
+.sliders.rounds:before {
+  border-radius: 50%;
+}
+.contenu {
+  padding: 0 20px;
+  display: none;
+  overflow: hidden;
+  
+  border: 1px dotted black;
+}
+.contenu p{
+  margin: 20px;
+  line-height: 1;
+}
+.contenu p a {
+  display: block;
+}
+#overflowTest {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 590px;
+ border: 1px solid #ccc;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 395px;
+}
+
+/*la barre des media icon-bar*/
+.icon-bar {
+  position: fixed;
+  right: 0px;
+  -webkit-transform: translateY(38%);
+  -ms-transform: translateY(38%);
+  transform: translateY(38%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.github {
+  background: #555;
+  color: white;
+}
+
+.rss {
+  background: #000;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+	</style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/neologic11.png" width="100%">
+      <h1></h1>
+  </div>
+   <div class="topnav">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Accueil</a>
+      <a href="notre_histoire.html">Notre Histoire</a>
+      <div class="dropdown">
+        <button class="dropbtn">Nos fiches métiers <i class="fa fa-caret-down"></i></button>
+         <div class="dropdown-content">
+        <a href="fiches_metiers.html">Metier du Piratage</a>
+        <a href="fiches_metiers.html">Metier du Web</a>
+        <a href="fiches_metiers.html#adminreseau">Metier des Réseaux</a>
+        </div>
+      </div>
+      <a href="services.html">Services</a>
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-fw fa-search"></i>Rechercher</button>
+      </form>
+    </div>
+
+  </div>
+
+       <div class="icon-bar">
+      <a href="https://github.com/Whitedukecmr/projetsfichesmetiers" class="github"><i class="fa fa-github"></i></a> 
+      <a href="#" class="rss"><i class="fa fa-rss"></i></a> 
+      <a href="https://www.google.fr/" class="google"><i class="fa fa-google"></i></a> 
+      <a href="https://www.linkedin.com/campaignmanager/login" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a> 
+       </div>
+
+	<div class="head">
+		<h1 style="color:#006666"><center><B>Nos fiches métiers</B></center></h1>
+		<h2 style="color:#003366"><center><div><u> Bienvenue sur l'onglet des métiers relatifs à l'informatique.</u></div></center></h2>
+		<p>
+      <h3 style="color:#003366">Sur cette page vous trouverez des métiers dérivés d'études en informatique,mais aussi des nouveaux répondant aux besoins de notre société ultra-connectée:
+      </h3>
+		</p>
+	</div>
+
+<p></p>
+<button class="collapsible">PROFILER DES RESEAUX SOCIAUX</button>
+<div class="content">
+  <div class="content-collap"><img src="images/profiler.jpg" title="net profiler" width="250" height="200"></div>
+  <div class="content-collaps"><p>Le <b>PROFILER DES RESEAUX SOCIAUX</b> aussi appelé criminologue, n'enquête pas principalement sur les tueurs en série. En effet, cet expert est avant tout un spécialiste des sciences du crime.</p> 
+<p>Son rôle est d'analyser la criminalité et d'en déterminer les causes par le biais de différentes approches (psychologiques, économiques, sociales ou politiques). A l'heure actuelle, la profession n'est pas reconnue en France et le métier est, de fait, souvent exercé par des psychologues spécialisés dans le domaine. </p>
+  </div>
+  <p>
+    <div>
+     <h4>Ses Missions</h4>
+         <p>Le profiler est avant toute chose un expert de la science du crime. Contrairement aux idées reçues dans les séries américaines, il ne s'agit pas d'un simple profiler chargé de déterminer le profil d'un criminel dans le cadre d'une enquête. Il participe à l'analyse des statistiques et à la recherche de l'origine des crimes.</p>
+         <p>Les missions du criminologue sont les suivantes :</p>
+         <li>il assiste les forces policières ou la gendarmerie dans le cadre de délits, de délinquance ou de crimes</li>
+         <li>il veille à l'actualité juridique pour mettre à jour ses connaissances au quotidien</li>
+         <li>il recherche les causes de la criminalité en analysant le contexte économique du crime, les motivations du délinquant ou du criminel, sa personnalité, sa situation familiale et professionnelle</li>
+         <li>il effectue des examens psychologiques des délinquants et des criminels</li>
+         <li>il assiste la police, la gendarmerie et les tribunaux pour fixer une peine proportionnelle au crime et à ses causes</li>
+         <li>il propose la mise en place de moyens de prévention adéquats et donne des cours pour partager ses connaissances de la criminalité.</li>
+     <h4>Secteur D'activité:</h4>
+        Contrairement à ce qu'il se passe aux États-Unis, le métier de criminologue n'est pas reconnu en tant que tel en France. Il s'agit d'une spécialisation obtenue après des études de droit ou de psychologie. Suite à l'obtention de cette spécialisation, le criminologue peut travailler au sein de différentes structures telles que <b>des centres pénitenciers, des maisons de transition, des centres de réadaptation</b>. Il travaille en étroite collaboration avec <b>la police et la gendarmerie</b>. Il exerce fréquemment sa profession sous forme de vacations et intervient donc quand une de ces structures fait appel à lui
+     <h4>Conditions de Travail:</h4>
+          Lecriminologue ou profiler exerce sa profession sous forme de vacations. Il intervient ainsi auprès des différentes structures susceptibles d'avoir besoin de ses services en fonction des demandes qui lui sont faites. Il peut ainsi être appelé par la police, les centres de santé mentale, les centres d'aide sociale, les établissements pénitentiaires, le monde associatif. Son travail s'effectue en grande partie dans un bureau, mais il peut être contraint de se déplacer sur le terrain. Il fait preuve de grande disponibilité et de flexibilité dans les horaires de travail.
+     <h4>Qualités requises et Compétences nécessaires:</h4>
+         Le profiler a pour rôle de rechercher les causes des crimes en fonction de différentes approches (psychologique, sociologique, politique, économique). À ce titre, il est <b>polyvalent</b> et doté de connaissances diverses dans ces différents domaines. Le ou la criminologue ne travaille jamais seul. Il fait ainsi preuve d'une grande <b>capacité à travailler en équipe</b>. Il est <b>à l'écoute</b> et sait s'adapter à toutes les situations. <b>Curiosité, empathie, maîtrise de soi et qualités psychologiques</b> sont indispensables pour exercer cette profession. Dans le cadre de son activité, le criminologue entretient des liens étroits avec les délinquants et les criminels. Il doit ainsi <b>faire preuve de patience</b>, <b>se montrer compréhensif</b>, <b>savoir mettre en confiance et communiquer avec facilité</b>. Son <b>sens de l’observation</b> lui permet d’être vigilant lors de ses entretiens avec les criminels.
+     <h4>Formations Requises:</h4>
+          L'accès au métier de criminologue peut s'effectuer en suivant plusieurs formations. L'obtention du baccalauréat est évidemment nécessaire. Le criminologue peut ensuite accéder à la profession grâce à <b>un master en sciences criminelles (une formation en droit pénal est évidemment fortement recommandée)</b>. Le profiler peut également débuter sa formation par <b>une licence en psychologie puis se spécialiser en criminologie via un master universitaire</b>. Le métier n'étant pas reconnu en tant que tel, seule une spécialisation en criminologie permet d'accéder au métier. L'université de Pau dispense <b>les masters Droits de l’exécution des peines et Droits de l'homme et droit privé, Parcours criminologie et Droits des mineurs en difficultés</b>.
+     <h4>Salaire:</h4>
+     <ol>➖Débutant: 2000 €/ Mois</ol>
+     <ol>➖Expérimenté: 2500 €/ Mois</ol>
+     <h4>Evolution Possible:</h4>
+      Les possibilités d'évolution sont assez restreintes, néanmoins, ses multiples connaissances en droit, en psychologie, en sociologie ou encore en économie lui offrent la possibilité d'exercer de nombreux métiers <b>(Psychologue, psychiatre)</b>. L'accès au marché du travail reste donc relativement simple pour ce professionnel polyvalent à l'expérience diverse.
+    </div>
+  </p>
+</div>
+
+<p style="visibility: hidden;">Collapsible Set:</p>
+<button class="collapsible">WHITE HATS</button>
+<div class="content">
+  <div class="content-collap"><img src="images/white.jpg" title="White Hats" width="250" height="200"></div>
+  <div class="content-collaps"><p>Le <b>hacker éthique</b> est un « gentil » hacker (appelé aussi hacker <b>white hat ou pirate au chapeau blanc</b>), un spécialiste de sécurité informatique offensive pour la protection des systèmes informatiques des entreprises. Son rôle : attaquer les systèmes de sécurité informatique pour tester leur vulnérabilité. Son activité permet ainsi aux entreprises de détecter les failles de leur système pour leur permettre de mieux se protéger d’éventuelles attaques de cybercriminels (hackers malveillants).</p>
+  </div>
+  <p>
+    <div>
+     <h4>Ses Missions:</h4>
+      Pour réussir sa mission, le hacker éthique doit se mettre dans la peau de pirates, penser comme eux pour mieux les bloquer. Mandaté par son client, ce hacker pratique ensuite des tests d’intrusion en contournant les règles de sécurité afin de voir si le système d’information (informatique, voitures connectées, caisses enregistreuses de supermarché, centrales hydroélectriques….) mis en place par l’entreprise résiste ou pas à une attaque informatique.
+
+     <h4>Secteur D'activité:</h4>
+        Internet est un terrain favorable à l’expansion de toutes sortes d’infractions. Les entreprises ont besoin du hacker éthique pour protéger leur système de sécurité informatique, du secteur public ou privé, de la cyberdélinquance. Tous les secteurs peuvent faire appel au hacking éthique (piratage bienveillant) :<b> banque, informatique, santé, administration française, grande distribution, automobile…</b>
+        Pour lutter contre le piratage informatique, l’armée recrute également des experts en cybersécurité : plus de <b>1 000 cybercombattants</b> sont recherchés d’ici 2025.
+     <h4>Conditions de Travail:</h4>
+      Les hackers éthiques <b>"White Hats"</b> sont souvent employés par des grosses entreprises dans des industries de pointe ou par des sociétés de services informatiques. Férus d'informatique, ils ne comptent pas leurs heures pour trouver et résoudre des failles découvertes dans les systèmes d'information.
+     <h4>Qualités requises et Compétences nécessaires:</h4>
+      Pour devenir hacker éthique, plusieurs qualités et compétences sont indispensables :
+        <ol>➖passion et connaissances en sécurité informatique</ol>
+        <ol>➖connaissance du droit et des lois sur l’informatique</ol>
+        <ol>➖rester éthique et légal</ol>
+        <ol>➖curiosité</ol>
+        <ol>➖dynamisme</ol>
+        <ol>➖réactivité</ol>
+        <ol>➖créativité</ol>
+        <ol>➖disponibilité</ol>
+        <ol>➖sens de la confidentialité</ol>
+        <ol>➖aimer le travail en équipe</ol>
+        <ol>➖goût du défi</ol>
+     <h4>Formations Requises:</h4>
+      Le métier d'hacker éthique n'est pas encore vraiment reconnu en tant que tel dans les entreprises, même si cela tend à changer. Des diplômes dédiés à ce poste existent ainsi que des certifications, mais la plupart des professionnels ont suivi des études d'informatique ou fait une école d’ingénieurs  :
+          <li>Diplôme d'Ingénieur de l'EPITA (Majeure SRS - Systèmes, Réseaux et Sécurité)</li>
+          <li>Licence professionnelle CDAISI (Cyber-défense, anti-intrusion des systèmes d'information), IUT de Valenciennes ;</li>
+          <li>École Cyberfull, Clermont-Ferrand ;</li>
+          <li>MSc Cybersécurité et management, Paris School of Business PSB ;</li>
+          Certaines formations sont accessibles aux candidats en reconversion ou en évolution professionnelle.
+           Il existe également quelques certifications :
+          <li>Certification OCSP : Offensive Security Certified Professional ;</li>
+          <li>Certification CEH : Certified Ethical Hacker (très souvent exigée par les entreprises).</li> 
+     <h4>Salaire:</h4>
+     <ol>➖Expert en sécurité informatique et réseaux, un hacker éthique peut prétendre à une rémunération comprise entre 6.000 et 7.500 euros bruts mensuels selon son expérience. Beaucoup d'entre eux sont également de plus en plus rémunérés sous forme de récompenses à la résolution d'un bug grâce aux plateformes de bug bounty.</ol>
+     <h4>Evolution Possible:</h4>
+      Avec l’expérience, un hacker éthique peut devenir responsable de sécurité informatique d’une entreprise ou d’une institution ou bien travailler comme indépendant en tant que consultant.
+
+    </div>
+  </p>
+</div>
+<p style="visibility: hidden;">Collapsible Set:</p>
+<button class="collapsible">PENTESTER</button>
+<div class="content">
+ <div class="content-collap"><img src="images/pentester1.jpg" title="Pentester" width="250" height="200"></div>
+  <div class="content-collaps"><p>Un des plus grands problèmes du monde virtuel est l’insécurité. Les <b>pentesters</b> – contraction des mots anglais <b>«penetration tester»</b> sont des hackers qui s’occupent de la sécurité informatique d’une entreprise et testent ses capacités de protection et défense. Pentester, un métier récent, mais d’avenir au regard de l’émergence des questions de cybersécurité.</p>
+  </div>
+  <p>
+    <div>
+     <h4>Ses Missions</h4>
+     <p>Un pentester est un expert en intrusion, aussi appelé «hacker éthique» dans certains domaines où il a pour mission d’assurer la sécurité informatique.</p>
+    <p>Ce professionnel peut aussi être vu comme un consultant en cybersécurité. Son métier consiste à s’introduire «volontairement» sur un réseau ou une application pour pouvoir évaluer son niveau de sécurité.
+    Pour ce faire, le pentester doit se mettre à la place d’un hacker, puis accéder aux données sensibles et potentielles de l’entreprise par n’importe quels moyens. Par la suite, il trouve des failles et des faiblesses qu’il va analyser en vue d’établir un rapport détaillé de la vulnérabilité du système.</p>
+    <p>Après cela, il recommande un système de sécurité à l’entreprise.</p>
+    <p>Il est à mentionner que les pentesters sont soumis à une clause de confidentialité très pointue : un point qui les différencie des hackers.
+    Le métier de pentester est donc très exigeant, car si ce professionnel de la cybersécurité ne trouve aucune faille aux systèmes qu’il infiltre, d’autres hackers le feront peut-être à sa place. Il faut donc une bonne formation et de solides bagages informatiques pour exercer professionnellement ce métier. Et bien sûr, une veille constante sur les stastitiques et méthodes de hacking.</p>
+     <h4>Secteur D'activité:</h4>
+      Le Pentester travaille directement dans les entreprises spécialisées dans les systèmes de sécurité de l’information [entreprises en démarrage comme les grandes entreprises], les sociétés de gestion ou de conseil.
+
+     <h4>Conditions de Travail:</h4>
+     Il est à noter que les testeurs d’intrusion doivent signer une clause de confidentialité très spécifique : cette clause les distingue des hackers.  Les exigences de travail des testeurs d’intrusion sont donc très élevées, car si le professionnel de la sécurité des réseaux ne trouve pas les vulnérabilités du système, d’autres hackers peuvent le faire pour lui.
+     <h4>Qualités requises:</h4>
+     Au niveau humain, des compétences interpersonnelles et un peu de psychologie sont nécessaires pour montrer les défauts du système à l’équipe qui conçoit le système. Ce qui les poussera à changer sans provoquer de résistance contre-productive. Au-delà des compétences techniques, le testeur d’intrusion doit donc être capable de s’exprimer à l’oral et à l’écrit [également en anglais], et être un excellent pédagogue et psychologue pour communiquer avec les développeurs du système là où il a trouvé des failles.
+     Mais il doit aussi faire preuve d’un sens moral impeccable, car ce métier conduit à accéder à des informations confidentielles généralement illégales.
+     <h4>Compétences et Outils:</h4>
+      Pour devenir pentester, la curiosité est un bon atout afin de comprendre le fonctionnement des choses. Ce métier exige une bonne <b>connaissance du développement logiciel et système informatique</b>.
+      Tout comme des connaissances solides en :
+       <ol>◾réseau et sécurité informatique (cryptographie, systèmes de codage, audit de sécurité réseau et web)</ol>
+       <ol>◾développement logiciel et systèmes informatiques (systèmes embarqués, systèmes industriels…).</ol>
+
+     <ol> Parallèlement, des compétences en programmation (Python, C/C++…) et langage de programmation web (Java, PHP...) sont indispensables, car les tests d’intrusion sont réalisés le plus souvent de manière automatisée.</ol> 
+     <h4>Formations Requises:</h4>
+      Le métier de pentester nécessite un bon niveau en informatique. Exemples de formations : 
+      <ol>◾niveau bac + 3</ol>
+      <li>Licence professionnelle métiers de l'informatique : administration et sécurité des systèmes et des réseaux
+      Différents parcours : cybersécurité (Université de Bourgogne)</li>
+      <li>BUT Informatique</li>
+      <ol>◾niveau bac + 5</ol>
+      <li>Diplôme d’ingénieur (Isep....)</li>
+      <li>Master  en informatique avec spécialisation en cybersécurité</li> 
+      Plus de détails sur les masters : www.trouvermonmaster.gouv.fr
+      Des certifications en sécurité/produits peuvent être parfois exigées. Parmi les plus courantes :  OSCP  (Offensive security certified professional). 
+      Comme beaucoup de nouveaux métiers, il y a aussi nombreux autodidactes passionnés par l’informatique qui exercent ce métier. 
+     <h4>Salaire:</h4>
+     <ol>➖Débutant: 36k €/ an</ol>
+     <ol>➖Expérimenté: 48k €/ an</ol>
+     <h4>Evolution Possible:</h4>
+      Pour ce qui concerne l’évolution de carrière, après quelques années de pratique, un pentester peut devenir responsable d’intrusion et se spécialiser dans un domaine particulier. À moins qu’il ne préfère se mettre à son compte.
+
+    </div>
+  </p>
+</div>
+<p style="visibility: hidden;">Collapsible Set:</p>
+<button class="collapsible">WEB DESIGNER</button>
+<div class="content">
+  <div class="content-collap"><img src="images/webdesigner.jpg" title="Web Designer" width="250" height="200"></div>
+  <div class="content-collaps"><p>Le <b>webdesigner</b> conçoit et réalise l'identité visuelle d'un site internet pour lequel il crée tous les éléments graphiques (illustrations, bannières, animations…) selon les désirs du client et en fonction du public visé, des impératifs du marketing et des contraintes techniques. Objectif : séduire les futurs utilisateurs du site.</p>
+
+  </div>
+  <p>
+    <div>
+     <h4>Ses Missions</h4>
+     <ol>➖Analyse de la demande client:</ol>
+     <ol>Prendre connaissance du brief créatif qui décrit les enjeux de la création ou de la refonte d’un site ou d’une application web ainsi que le budget défini.</ol>
+     <ol>Connaître l'univers global de la marque ; comprendre l'évolution et les lignes directrices de la charte graphique (couleurs, matières, formats, messages...).</ol>
+     <ol>Échanger avec le directeur artistique sur les objectifs du projet, prendre connaissance des étapes et des délais de production.</ol>
+     <ol>Elaborer le projet avec le directeur artistique pour le chiffrer et le soumettre au client.</ol>
+
+     <ol>➖Conception du design du site et/ou des applicatifs:</ol>
+     <ol>Créer la maquette et le story-board du site dans le respect des règles de confort de navigation et d’ergonomie.</ol>
+     <ol>Améliorer les suggestions retenues par le directeur artistique et les faire évoluer en tenant compte des remarques émises par l'équipe.</ol>
+     <ol>S'assurer de la bonne harmonie entre les visuels et le contenu, optimiser la mise en page pour faciliter la navigation par les internautes ainsi que le référencement naturel du site.</ol>
+     <ol>➖Réalisation de la production graphique:</ol>
+     <ol>Démarrer la conception des éléments de communication, une fois l'accord client obtenu sur les maquettes présentées.</ol>
+     <ol>Créer les pictogrammes, bannières, boutons, les interfaces graphiques, illustrations, animations…</ol>
+     <ol>Perfectionner les finitions des visuels, en retouchant les couleurs, la typographie ou encore les illustrations en fonction des remarques de l’équipe de développement.</ol>
+     <ol>Veiller à la bonne cohérence entre le fond et la forme de chaque support ; retravailler chaque élément de la chaîne graphique jusqu'au « bon à tirer » par le client (interne ou externe).</ol>
+     <h4>Secteur D'activité:</h4>
+     Bien que ce métier s’exerce en agence et en entreprise, le nombre de postes à pourvoir en agence est plus important.
+      Par ailleurs de nombreux graphistes et webdesigners travaillent en indépendant pour des agences ou des PME. Ils doivent alors consacrer du temps à des activités commerciales et de gestion.Dans les petites agences ou sur certains projets courts, certains webdesigners confirmés peuvent se voir confier des missions de direction artistique.
+     <h4>Conditions de Travail:</h4>
+     L'activité du webdesigner peut varier selon…
+     Les conditions d'exercice :
+     <p> ◾En agence : on distingue les agences généralistes, dites « 360° », des agences spécialisées dans les nouveaux médias (agences web, agences de communication interactive). Dans le premier cas, le graphiste est susceptible d’intervenir sur n’importe quel média et support (affiche, spot TV, animation on line, mini site pour mobile), dans le second, il se spécialise dans la conception multimédia (Internet et mobile) et est graphiste webdesigner, expert en création digitale et capable de jouer sur l’interactivité propre à l’Internet.</p>
+      <p>◾En entreprise : certaines entreprises décident d’internaliser une partie de la gestion de leurs problématiques artistiques, en particulier celles qui ont une image de marque forte à gérer, et/ou qui ont une politique éditoriale exigeante et/ou qui éditent un important volume de catalogues. Le graphiste webdesigner peut être alors amené à travailler avec des prestataires spécialisés dans certains domaines : 3D, vidéos…</p>
+     <h4>Qualités requises:</h4>
+     <ol>◾Grande créativité, imagination mais aussi pragmatisme, afin de proposer des chartes graphiques originales et adaptées au positionnement de la marque</ol>
+     <ol>◾Capacité à réagir vite, rebondir sur de nouveaux concepts lorsque les premières idées ne sont pas approuvées par le client</ol>
+     <ol>◾Capacité à se former et à s’auto former régulièrement, afin de connaître les derniers outils de création graphiques</ol>
+     <ol>◾Pugnacité, pour travailler à plusieurs reprises sur un même thème et pousser la réflexion artistique le plus loin possible</ol>
+     <ol>◾Force de conviction, pour susciter l’adhésion autour d’un projet créatif en interne comme en externe</ol>
+     <ol>◾Qualités relationnelles, pour parvenir à un travail en équipe efficace</ol>
+     <ol>◾Bonne résistance à la pression, dans la mesure où les délais sont souvent serrés et la charge de travail importante</ol>
+     <ol>◾Intérêt pour le Web et les réseaux sociaux</ol>
+     
+     <h4>Compétences et Outils:</h4>
+     <ol>◾Compétences artistiques, pour conceptualiser les attentes de la marque au travers de visuels on line, pour dessiner des formes originales, pour associer les bonnes notes de couleur</ol>
+      <ol>◾Bonnes notions en communication et en marketing, pour comprendre la stratégie de promotion d’une entreprise</ol>
+      <ol>◾Notions de l’univers artistique de la marque ainsi que son univers concurrentiel</ol>
+      <ol>◾Connaissance de la charte graphique on line, c’est à-dire l’ensemble des étapes de création d’un support</ol>
+      <ol>◾Notions de référencement et de webanalytics pour comprendre les problématiques liées au référencement des sites et des pages sur les réseaux sociaux</ol>
+      <ol>◾Connaissance des pratiques et usages sur les réseaux sociaux</ol>
+      <ol>◾Connaissance des outils de programmation et des logiciels en usage dans le développement web ( HTLM, XHTLM, XML, CSS, Web 2.0, W3C, Java/Java script, PHP, ASP, JSP )</ol>
+      <ol>◾Maîtrise de divers outils de création graphique et multimédia (Illustrator, Xpress, QuarkXPress, Photoshop, programmation Flash, 3DS Max, Dreamweaver, After Effects, Ajax, Indesign,Imageready…)</ol>
+      <ol>◾Capacité d’organisation et rigueur afin de respecter les délais de mise en ligne</ol>
+      <ol>◾Capacité à travailler en équipe avec d’autres graphistes et prestataires (retouche d’images, studio de montage vidéo, intégrateurs de contenus…)</ol>
+     <h4>Formations Requises:</h4>
+     Diplômes requis
+      <ol>◾Formations Bac+2 (DUT/BTS) spécialisées en création graphique ou formation informatique avec spécialisation en graphisme</ol>
+      <ol>◾Formations Bac +3 à Bac+ 5 spécialisées en arts graphiques, arts appliqués ou informatique avec option webdesign (licences professionnelles de webdesigner, d’infographiste...)</ol>
+      <ol>◾Ecoles de graphisme</ol>
+      Dans ces métiers, l’alternance est valorisée.
+     <h4>Salaire:</h4>
+     <ol>➖Débutant: entre 24 et 30k €/ an</ol>
+     <ol>➖Expérimenté: entre 30 à 45k €/ an</ol>
+     <h4>Evolution Possible:</h4>
+      Après quelques années d’expérience, un webdesigner peut devenir chef de projet web ou, à condition de développer un véritable sens du graphisme, devenir directeur artistique.
+      <ol>Possibilité également d'évoluer vers les spécialisations de designer UX / UI.</ol>
+
+    </div>
+  </p>
+</div>
+<p style="visibility: hidden;">Collapsible Set:</p>
+<button class="collapsible">ADMINISTRATEUR RESEAU</button>
+<div class="content">
+  <div class="content-collap"><img src="images/admin.jpg" title="Administrateur Reseau" width="250" height="200"></div>
+  <div class="content-collaps"><p><b>L'administrateur systèmes et réseau</b> est garant du bon fonctionnement  du réseau et du système informatique d'une  entreprise.</p><p>Il gère et développe les systèmes de traitement de l'information de l'entreprise. Il est le garant de l'accessibilité et de la sécurité de l'information.</p>
+  </div>
+  <p>
+    <div>
+     <h4>Ses Missions</h4>
+     <ol>◾Installation et paramétrage des équipements et logiciels.</ol>
+     <ol>◾Supervision et dépannage des systèmes et applications réseaux </ol>
+     <ol>◾Gestion de la sécurité en l'absence de RSSI ou d'ingénieur dédié</ol>
+     <ol>◾Conduite et participation à des projets relevant de son périmètre d'activités.</ol>
+     <ol>◾Déploiement et gestion des terminaux mobiles.</ol>
+     <ol>◾mise en place de système de back up (sauvegarde)</ol>
+     <h4>Secteur D'activité:</h4>
+     <ol>Il travaille dans les PME, les grandes entreprises ou les administrations, organisations des secteurs public, privé et tiers bénéficiant de leurs propres infrastructures réseaux et utilisant des bases de données informatisées.</ol>
+     <ol>il peut intervenir à la direction informatique, à une équipe de supervision du réseau ou bien exerce sous la responsabilité d'un directeur technique.</ol>
+     <ol>Il est également possible de travailler en tant que consultant ou entrepreneur indépendant.</ol>
+     <h4>Conditions de Travail:</h4>
+     Les heures de travail sont généralement de 37 à 40heures par semaine, du lundi au vendredi, et peuvent inclure des heures régulières non sociales.
+     Un administrateur système et réseau évolue dans une équipe siégeant généralement au sein d’un bureau, mais les différentes interventions peuvent le pousser à se déplacer dans tous les recoins des locaux de l’entreprise.
+     Il travaille la nuit et le week-end (pendant les périodes de faible utilisation) lorsque des travaux de maintenance et de développement doivent être entrepris.
+
+     <h4>Qualités requises:</h4>
+     <li>Bonnes capacités d’analyse et de résistance au stress</li>
+     <li>Rigueur et capacité d'organisation</li>
+     <li>Bon relationnel</li>
+     <li>Sens de l'anticipation et curieux</li>
+     <li>Dynamique, Autonome, Polyvalent</li>
+     <h4>Compétences et Outils:</h4>
+     <ol>➖Connaissances matérielles (Hardware)</ol>
+     <ol>➖Couches du modèle OSI définissnant les couches d'un réseau</ol>
+     <ol>➖Protocoles de communication (TCP/IP )</ol>
+     <ol>➖système d'exploitation PC, serveurs et routeurs (Windows,linux,unix..)</ol>
+     <ol>➖Réseaux (protocoles, routage,Firewall, VPN, VLAN, câblage virtualisation, WIFI...)</ol>
+     <ol>➖Sécurité (contrôle d'accès, pare-feu, supervision...)</ol>
+     <ol>➖Architecture des réseaux (LAN, MAN,WAN, WLAN...)</ol>
+     <ol>➖Téléphonie sur IP</ol>
+     <ol>➖Stockage (SAN, NAS, réplication...)</ol>
+     <ol>➖Maîtrises des différents langages de programmation</ol>
+     <ol>➖Maîtrise des bases de données (Oracle, MySQL, SyBase, SQL Server…) et des outils spécialisés dans l’administration de ces bases</ol>
+     <ol>➖Connaissance des scripts Shell sous UNIX, Windows ou MVS</ol>
+     <ol>➖Maîtrise de l’anglais technique</ol>
+     <h4>Formations Requises:</h4>
+     Le niveau recommandé pour exercer en tant Administrateur Systèmes et Réseaux dépend de l’importance du réseau à administrer. En pratique, il suffit d’un niveau Bac+3 (BUT, licence professionnelle) en réseaux et télécommunications pour travailler dans une PME (réseau local). En revanche, un master (bac+5) en réseaux et télécommunications ou un diplôme d’ingénieurs sera requis pour les réseaux plus complexes.
+     <h4>Salaire:</h4>
+     <ol>➖Débutant: 30 à 40k Euros par an</ol>
+     <ol>➖Confirmé: 45 à 60k Euros par an</ol>
+     <ol>➖Expérimenté: 75k Euros par an</ol>
+     <h4>Evolution Possible:</h4>
+       <ol> Architecte réseau</ol>
+        <ol>Architecte de bases de données</ol>
+       <ol> Directeur Technique</ol>
+       <ol> Responsable Datacenter ou Télecom</ol>
+       <ol> Gestion de projet</ol>
+       <ol> Spécialisation dans un secteur précis (exemples: sécurité, Cloud et Big Data, Stockage etc.)</ol>
+
+
+    </div>
+  </p>
+</div>
+<p style="visibility: hidden;">Collapsible Set:</p>
+<button class="collapsible">ADMINISTRATEUR EN CYBERSECURITE</button>
+<div class="content">
+  <div class="content-collap"><img src="images/admincyber.jpg" title="Administrateur Cybersecurite" width="250" height="200"></div>
+  <div class="content-collaps"><p><b>L'Administrateur Cybersécurité</b> est chargé de mettre en place les politiques de sécurité qui ont été au préalable définies par les RSSI. Il se charge aussi de veiller au respect et à la bonne utilisation du système informatique et traite toute potentielle faille de sécurité.</p>
+  <p>La sécurité informatique prenant une dimension majeure au sein des entreprises, trouver les bons experts sécurité est devenu un défi de taille. 80% des entreprises européennes ont été attaquées au moins une fois par des cybercriminels.</p>
+  </div>
+  <p>
+    <div>
+     <h4>Ses Missions</h4>
+     <ol>◾Mise en œuvre de la politique de sécurité informatique:</ol>
+     A partir de la politique de sécurité informatique définie par le DSI, l’Ingénieur Administrateur Sécurité est responsable de sa bonne mise en œuvre. Il convient pour cela de faciliter le processus de circulation et de contrôle de d’information, de mettre en place une charte ainsi que des règles d‘utilisation.
+     <ol>◾Veille informatique et sécuritaire:</ol>
+     En constante augmentation, les menaces cybercriminelles ne cessent de se renouveler et des nouveaux dangers apparaissent régulièrement auxquels l’Ingénieur Administrateur Sécurité doit faire face. Pour cela, il devra connaitre suffisamment les différents logiciels et autres méthodes utilisés par les pirates informatiques.
+     <ol>◾Sensibilisation des employés:</ol>
+     la mise en place d’une politique de sécurité comprend l’élaboration de règles d’utilisation. Celles-ci seront adressées à l’attention des utilisateurs et de ce fait, devrons être assez claires pour que les enjeux de sécurité informatique de l’entreprise soit compris de tous.
+     <h4>Secteur D'activité:</h4>
+     <ol><b>Chez l’annonceur</b> : il dépend alors de la DSI (direction des systèmes d’information) de l’entreprise tout en ayant des liens très forts avec l’ensemble des services. </ol>
+     <ol><b>En SSII</b> : en société de services et d’Ingénierie en Informatique, l’expert est consultant en cybersécurité et gère plusieurs comptes clients.</ol>
+     <ol> il peut également exercer son activité en tant que freelance. Il sera alors rémunéré selon les missions.</ol>
+     <h4>Conditions de Travail:</h4>
+     Il définit une stratégie de sécurité adaptée aux besoins et à la culture de l'entreprise. À l'arrivée, c'est un panel de procédures qui va de la gestion des mots de passe à la cryptologie, en passant par les pare-feu, les antivirus, la limitation des accès au réseau en cas d'informations stratégiques, etc. Pour faire évoluer les solutions, l'expert suit au plus près le droit et les réglementations spécifiques et s'informe sur les nouvelles technologies. Sensibiliser les utilisateurs et les directions aux règles et aux enjeux de sécurité s'avère également primordial.
+     <h4>Qualités requises:</h4>
+       <li>Rigueur</li>
+       <li>Anticipation et disponibilité</li>
+       <li>Bonne communication</li>
+       <li>Bonnes capacités d’analyse et de résistance au stress</li>
+       <li>Dynamique, Autonome, Polyvalent</li>
+     <h4>Compétences et Outils:</h4>
+        <ol>Maîtrise du système d’information, de l’urbanisation et de l’architecture du SI</ol>
+        <ol>Maîtrise des processus de production</ol>
+        <ol>Sécurité des systèmes d’exploitation</ol>
+        <ol>Sécurité des réseaux et protocoles</ol>
+        <ol>Configuration des outils liés à la sécurité</ol>
+     <h4>Formations Requises:</h4>
+     L'administrateur en cybersécurité devra obtenir son <b>BTS ou IUT en informatique</b>. Il doit ensuite compléter sa formation avec un <b>master en école d’ingénieur ou avec un diplôme universitaire en informatique</b>. A cela, la formation continue lui permettra d’acquérir des compétences et qualifications supplémentaires tout au long de sa carrière. 
+     <h4>Salaire:</h4>
+     <ol>➖ Selon la taille et la nature de l’entreprise, la rémunération mensuelle nette d’un responsable sécurité s’échelonne entre 3 500 et 4 600 €. Tout dépend de son ancienneté dans la fonction ou l’entreprise.</ol>
+     <h4>Evolution Possible:</h4>
+     L'éxpérience de L'administrateur en cybersécurité lui permet d’envisager plusieurs évolutions possibles, par exemple vers des missions d’expertise ou d’audit, ou encore de prendre la direction d’un service informatique. Le metier d'expert en cybersécurité n'est pas une fin en soi. Il permettra, par la suite, d'atteindre les métiers de Responsable de la sécurité des systèmes d’information (RSSI), ou de Responsable système réseaux...
+      L‘expert en sécurité des systèmes d’information n’est pas une fonction attribuée à un débutant.
+
+    </div>
+  </p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+	<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Plan du site</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="notre_histoire.html">Notre Histoire</a></li>
+            <li><a href="fiches_metiers.html">Nos fiches Métiers</a></li>
+            <li><a href="services.html">Nos Services</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Qui sommes nous?</h4>
+          <ul>
+            <li><a href="confidalite.html">Mentions légales</a></li>
+          
+            <li><a href="mention.html">Politique de confidentialité</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Recherche</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Suivez nous sur</h4>
+          <div class="social-links">
+            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/campaignmanager/login"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Whitedukecmr/projetsfichesmetiers"><i class="fab fa-github"></i></a>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div><p><hr style="font-weight: bold;">©️COPYRIGHT-2021|NEOLOGICWEBRUNNING.com</p></div>
+  </footer>
+
+  <div class="cookie-container">
+    <p>
+      NEOLOGIC WEBRUNNING utilise des cookies et vous donne le controle sur ce que vous souhaitez activer. Lire notre <a href="mention.html">Politique de confidentialité</a>
+    </p>
+    <button class="cookie-btn">
+      ✔️Tout accepter
+    </button>
+    <button class="btn-cookie">
+      ✖️Refuser
+    </button>
+    <button class="cookie-btn" onclick="document.getElementById('box').style.display='block'">
+      <a>Personnaliser</a>
+    </button>
+    <div id="box">
+      <div class="disparition" id="modale">
+        <h2><center>Panneau de gestion des cookies</center></h2>
+        <p style="line-height: 1em;">Sur ce site, nous utilisons des cookies pour mesurer notre audiance, entretenir la relation avec vous et vous addresser de temps à autre du contenu qualitif ainsi que de la publicité. Vous pouvez sélectionner ici ce que vous autorisez à rester.</p>
+        <p><h4>Gérer les préférences de consentement :</h4></p>
+        <ul id="overflowTest">
+          <li>
+            <b class="pliable">+ Cookies de réseaux sociaux :</b>
+            <div class="contenu">
+            <p>Ces cookies permettent de vous proposer des contenus en provenance de réseaux sociaux. Refuser le dépôt de ces cookies est sans conséquence pour votre navigation sur notre site. En revanche, l'utilisation des fonctionnalités concernées sera rendu impossible.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾LinkedIn</ol>
+              <ol>◾Twitter</ol>
+              <ol>◾Facebook</ol>
+              <ol>◾Indeed</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+           
+          </li>
+          <li>
+            <b class="pliable">+ Cookies de ciblage :</b>
+            <div class="contenu">
+            <p>Ces cookies peuvent être installés via notre site par nos partenaires publicitaires. Ils peuvent être utilisés par ces sociétés pour établir un profil de vos intérêts et vous montrer des publicités pertinentes sur d'autres sites. Ils ne stockent pas directement d'informations personnelles, mais sont basés sur l'identification unique de votre navigateur et de votre appareil Internet. Si vous n'autorisez pas ces cookies, vous bénéficierez d'une publicité moins ciblée.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾First Party Cookies</ol>
+              <ol style="color: blue;">◾preferencechoice.com</ol>
+              <ol style="color: blue;">◾IAdvize.com</ol>
+              <ol>◾Googles Analytics</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies fonctionnels :</b>
+            <div class="contenu">
+            <p>Ces cookies permettent au site Web de fournir des fonctionnalités et une personnalisation améliorées. Ils peuvent être définis par nous ou par des fournisseurs tiers dont nous avons ajouté les services à nos pages. Si vous n'autorisez pas ces cookies, certains ou tous ces services peuvent ne pas fonctionner correctement.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu" style="color: blue;">
+              <ol>◾Google.com</ol>
+              <ol>◾Bing.com</ol>
+              <ol>◾Yahoo.com</ol>
+              <ol>◾Eloqua.com</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies de performances :</b>
+            <div class="contenu">
+            <p>Ces cookies nous permettent de compter les visites et les sources de trafic, afin que nous puissions mesurer et améliorer les performances de notre site. Ils nous aident à savoir quelles pages sont les plus et les moins populaires et à voir comment les visiteurs se déplacent sur le site. Toutes les informations collectées par ces cookies sont agrégées et donc anonymes. Si vous n'autorisez pas ces cookies, nous ne saurons pas quand vous avez visité notre site.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾Aha!</ol>
+              <ol>◾Glaze</ol>
+              <ol>◾Cookiepedia</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies strictement nécessaires</b>
+            <div class="contenu">
+            <p>Ces cookies déposés pour le compte de Neologic Webrunning sont nécessaires au bon fonctionnement de notre site web et ne peuvent pas être désactivés.</p>
+            <p>Ils permettent :</p>
+            <ol>◾Le maintien de votre session et votre authentification ;</ol>
+            <ol>◾La conservation de votre choix sur le dépôt des cookies ;</ol>
+            <ol>◾La mesure statistique visant à l'amélioration des performances de notre site.</ol>
+            <p>Vous avez la possibilité de configurer votre navigateur pour refuser le dépôt de ces cookies, mais la navigation sur le site sera dégradée.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾Hotjar</ol>
+              <ol>◾AB Tasty</ol>
+              <ol>◾Content Square</ol>
+              <ol>◾Qualitrics</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+                  <input type="checkbox" checked="checked">
+                    <span class="sliders rounds"></span>
+                </label>
+                <b style="color: blue;">Toujours actif</b>
+               
+              </div>
+          </li>
+          </ul>
+        <a onclick="document.getElementById('box').style.display='none'">✖️</a>
+        <div class="modale-footer">
+          <p><button type="button" onclick="document.getElementById('box').style.display='none'" class="footer-btn" style="float: right; font-size: 20px;">Confirmer</button></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("pliable");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var contenu = this.nextElementSibling;
+        if (contenu.style.display === "block") {
+          contenu.style.display = "none";
+        } else {
+          contenu.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <script>
+    // je recupere le modal
+    var modal = document.getElementById('box');
+
+    // Lorsque l'utilisateur clique sur confirmer la modale se ferme
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="main2.js"></script>
+  <script type="text/javascript" src="main3.js"></script>
+</body>
+</html>

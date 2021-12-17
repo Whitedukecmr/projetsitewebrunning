@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nos Fiches Métiers</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+  @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;700 & display=swap');
+		* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family : 'Poppins', sans-serif ;
+  padding: 40px;
+  background:#ddd;
+  line-height: 1.5;
+  
+}
+.head {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  color: white;
+}
+
+/* Style de la barre de navigation topnav */
+.topnav 
+{
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style des liens topnav */
+.topnav a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* la couleur du topnav */
+.topnav a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+/*Barre de navigation recherche*/
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/*listes deroulantes*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.footer{
+  background-color: #ffffff;
+  padding: 20px;
+  text-align:;
+  margin-top: 15px;
+  
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-weight: 500;
+  position: relative;
+
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #blue;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: blue;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: blue;
+}
+ /*responsive*/
+ @media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+ }
+
+ @media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+ }
+ul{
+  list-style: none;
+
+}
+
+
+ #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+.rgpd h3 {
+  text-align: center;
+}
+.rgpd {
+  margin: 25px;
+  padding: 25px;
+}
+.rgpd p {
+  line-height: 2em;
+}
+/* cookies*/
+.cookie-container{
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 100ms;
+}
+.cookie-container.active {
+  bottom: 0;
+}
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cookie-btn:hover {
+  background: rgba(47, 54, 64, 0.39);
+}
+.btn-cookie{
+ background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cookie-btn a:link {
+text-decoration: none;}
+.btn-cookie:hover {
+ background: rgba(47, 54, 64, 0.39); 
+}
+/* fenêtre modale*/
+#box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(55, 55, 55, 0.5);
+  display: none;
+}
+#box:target {
+display: block;
+}
+#modale a {
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#modale h2, #modale p, #modale h4, #modale li {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#modale {
+  background-color: #ecf0f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 5px;
+  border-radius: 6px;
+  width: 600px;
+
+}
+#modale ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+
+}
+#modale ul li {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 15px;
+}
+#modale-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #c0c0c0;
+}
+#modale-footer button {
+  font-size: 20px;
+}
+/*Toggle switch*/
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliders {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliders:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#modale input:checked + .sliders {
+  background-color: #2196F3;
+}
+
+#modale input:focus + .sliders {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+#modale input:checked + .sliders:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.sliders.rounds {
+  border-radius: 17px;
+}
+
+.sliders.rounds:before {
+  border-radius: 50%;
+}
+.contenu {
+  padding: 0 20px;
+  display: none;
+  overflow: hidden;
+  
+  border: 1px dotted black;
+}
+.contenu p{
+  margin: 20px;
+  line-height: 1;
+}
+.contenu p a {
+  display: block;
+}
+#overflowTest {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 590px;
+ border: 1px solid #ccc;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 395px;
+}
+
+
+	</style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/neologic11.png" width="100%">
+      <h1></h1>
+  </div>
+   <div class="topnav">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Accueil</a>
+      <a href="notre_histoire.html">Notre Histoire</a>
+      <div class="dropdown">
+        <button class="dropbtn">Nos fiches métiers <i class="fa fa-caret-down"></i></button>
+         <div class="dropdown-content">
+        <a href="fiches_metiers.html">Metier du Piratage</a>
+        <a href="fiches_metiers.html">Metier du Web</a>
+        <a href="fiches_metiers.html#adminreseau">Metier des Réseaux</a>
+        </div>
+      </div>
+      <a href="services.html">Services</a>
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-fw fa-search"></i>Rechercher</button>
+      </form>
+    </div>
+
+  </div>
+	<div class="head">
+		<h1 style="color:#006666"><center><B><u>Politique de confidentialité</u></B></center></h1>
+		<h2 style="color:#003366"><center><div> Bienvenue sur l'onglet de notre Politique de protection des données personnelles.</div></center></h2>
+	</div>
+
+    <div class="rgpd" style="background-color: #f0f8ff;">
+      <h3><u>1. BUTS & OBJECTIFS</u></h3>
+      <p>Les employés et le personnel de Neologic Webrunning et de ses filiales et sociétés associées ont le devoir de maintenir la confidentialité des informations qu'ils reçoivent dans le cadre de leur emploi ou de leur engagement. Cette politique de confidentialité documente les devoirs et obligations de confidentialité et de non-divulgation des employés et du personnel de Webrunning.</p>
+      <p>Les employés et le personnel de Webrunning, au cours de leur emploi et de leur engagement, prendront connaissance et posséderont des informations de Webrunning ou de tiers divulguées à Webrunning qui ne sont généralement pas connues. Cela peut inclure des informations qui, si elles étaient divulguées, pourraient compromettre les intérêts de Webrunning. Cela peut également inclure la divulgation de secrets commerciaux dont la divulgation pourrait nuire aux intérêts de Webrunning.</p>
+      <p>Tous les employés et le personnel de Neologic Webrunning ont le devoir de garder ces informations strictement confidentielles et de les utiliser uniquement à des fins appropriées conformément à la loi.</p>
+      <h3><u>2. BUT</u></h3>
+      <p>La présente Politique de Confidentialité a pour objet d'énoncer les principes qui doivent être respectés par tous ceux qui travaillent avec Neologic Webrunning et ont accès à des informations confidentielles.</p>
+      <p>Cette politique, le cas échéant, doit être lue conjointement avec la lettre de nomination et/ou le contrat de travail applicables aux employés et au personnel du Groupe L&T, et d'autres règles de travail, politiques et procédures applicables aux employés et au personnel de Neologic Webrunning.</p>
+      <h3><u>3. INFORMATIONS CONFIDENTIELLES</u></h3>
+      <p>Les informations confidentielles comprennent toutes les informations qui ne sont pas connues du public. Cela peut concerner la technologie, les affaires, les finances, les transactions ou d'autres affaires d'une entreprise. Il comprend des informations qui ont une valeur commerciale, telles que des secrets commerciaux ou des informations commerciales, ainsi que des informations personnelles.</p>
+      <p>Les exemples d'informations confidentielles incluent, sans s'y limiter : tout document, découverte, invention, amélioration, spécification de brevet, formulations, plans, idées, livres, comptes, données, rapports, ébauches de documents de toutes sortes, correspondance, informations sur les clients, listes et fichiers, décisions, informations sur les employés, stratégies, dessins, recommandations, conceptions, précédents administratifs, politiques et procédures, informations budgétaires et financières sous quelque forme que ce soit, c'est-à-dire physique, électronique, électromagnétique ou autre.
+      </p>
+      <p>Les informations confidentielles relatives à des inventions non publiées peuvent être particulièrement sensibles. La divulgation d'une invention avant le dépôt d'une demande de brevet entraînera une perte irréversible des droits de propriété intellectuelle pour le propriétaire de l'invention. Même après le dépôt d'une demande de brevet, il faut veiller à ne pas divulguer les améliorations apportées à l'invention. La protection du secret commercial sera également perdue en cas de divulgation ouverte du secret.</p>
+      <h3><u>4. PRINCIPES</u></h3>
+      <p>Neologic Webrunning attend de tous ses employés et de son personnel qu'ils traitent toutes les informations confidentielles de manière sensible et professionnelle. Les employés et le personnel de Webrunning ont l'obligation de ne pas accéder ou tenter d'accéder à des informations qu'ils ne sont pas autorisés à détenir.</p>
+      <p>Neologic Webrunning, cependant, reconnaît l'importance d'une culture ouverte avec une communication et une responsabilité claires. Webrunning souhaite maintenir la sécurité personnelle et organisationnelle et attend de tous les employés et du personnel qu'ils traitent les informations confidentielles d'une manière qui protège la sécurité de l'organisation.</p>
+      <p>L'objectif de la confidentialité est essentiellement double. Premièrement, il protège les informations sensibles ou confidentielles de Neologic Webrunning et de ses clients et clients. Deuxièmement, pour que le Webrunning soit efficace, les employés et le personnel du Webrunning doivent pouvoir partager des informations et des connaissances, et donc la confidentialité est nécessaire comme condition de confiance.</p>
+      <p>La meilleure protection contre les atteintes à la confidentialité est de réduire au minimum nécessaire le nombre d'employés et de personnel ayant accès aux informations sensibles.</p>
+      <p>La divulgation intentionnelle, répétée, accidentelle ou non autorisée de toute information confidentielle par un membre du personnel fera l'objet de mesures disciplinaires. Toute mesure disciplinaire de ce type tiendra compte de la nature confidentielle et possiblement sensible des informations et garantira qu'en les traitant, aucune autre violation de la confidentialité n'aura lieu.</p>
+      <h3><u>5. MAINTIEN DE LA CONFIDENTIALITÉ ET DE LA NON-DIVULGATION</u></h3>
+      <p>Les employés et le personnel de Neologic Webrunning :</p>
+      <ol>◾Doivent garder confidentielles toutes les informations confidentielles</ol>
+      <ol>◾Peuvent utiliser des informations confidentielles uniquement aux fins de l'exercice de leurs fonctions en tant qu'employé de Neologic Webrunning</ol>
+      <ol>◾Et ne peut divulguer des informations confidentielles qu'à des personnes qui savent que les informations confidentielles doivent rester confidentielles et qui ont besoin de savoir (mais uniquement dans la mesure où chaque personne a un besoin de savoir).</ol>
+      <p>L'obligation de l'employé et du personnel de maintenir la confidentialité et la non-divulgation ne s'étend pas aux informations confidentielles qui doivent être divulguées par l'employé conformément à une ordonnance d'un tribunal ou de toute autorité statutaire. L'employé ou la personne informera rapidement la Société de toute exigence de ce type pour permettre à la Société de prendre les mesures nécessaires jugées appropriées par la Société dans les circonstances.</p>
+      <p>A la fin de la période d'emploi, les employés et le personnel de Webrunning doivent restituer à Neologic Webrunning :</p>
+      <ol>◾Toutes les informations confidentielles sous forme matérielle</ol>
+      <ol>◾Les parties de toutes les notes et autres enregistrements, sous quelque forme que ce soit, basées sur ou incorporant des informations confidentielles</ol>
+      <ol>◾Toutes les copies des informations et notes confidentielles et autres enregistrements basés sur ou incorporant des informations confidentielles </ol>
+      <ol>◾Tous les biens et actifs de Neologic Webrunning, en la possession ou sous le contrôle de l'employé ou du personnel de Webrunning. L'obligation de maintenir la confidentialité et la non-divulgation continuera même après la fin de la période d'emploi ou d'engagement en ce qui concerne toutes les informations confidentielles.</ol>
+      <p>Tout employé qui enfreint cette obligation de confidentialité et de non-divulgation, alors qu'il est employé par Webrunning, sera sanctionné et, dans les cas graves, licencié. Tout ex-employé qui ne respecte pas cette obligation de confidentialité peut faire l'objet de poursuites judiciaires à son encontre, en fonction des circonstances de la violation, y compris l'annulation / le retrait de tout ou partie des avantages s'il est accordé à l'ex-employé par le Société.</p>
+      <p>Cette politique fonctionnera conjointement avec le contrat de travail ou la lettre de nomination pour les employés et le personnel de Neologic Webrunning.</p>
+      <h3><u>6. BESOIN DE SAVOIR</u></h3>
+      <p>Les informations confidentielles ne doivent être divulguées que sur la base du « besoin de savoir », uniquement lorsque les informations sont nécessaires à l'employé pour qu'il s'acquitte efficacement de ses tâches.</p>
+      <h3><u>7. CIRCONSTANCES DANS LESQUELLES DES INFORMATIONS PEUVENT ÊTRE DIVULGUÉES</u></h3>
+      <ol>◾Avec le consentement écrit de son supérieur hiérarchique d'au moins le niveau 4 et dans un but particulier.</ol>
+      <ol>◾Si les informations sont requises par ou en vertu d'une ordonnance du tribunal ou d'une autorité statutaire, l'employé ou la personne informera rapidement la Société de toute exigence pour permettre à la Société de prendre les mesures nécessaires jugées appropriées par la Société dans les circonstances.</ol>
+      <ol>◾Lorsque la divulgation peut être justifiée à toute autre fin. Ceci est généralement destiné à la protection du public et est susceptible d'être lié à la prévention et à la détection d'infractions graves. Une demande d'information par la police doit être soigneusement étudiée.</ol>
+      <p>L'employé de Webrunning doit être en mesure de justifier toute décision lorsque l'information a été divulguée.</p>
+      <h3><u>8. STOCKAGE DES DONNÉES</u></h3>
+      <p>Aucun document écrit contenant des informations confidentielles ne doit être laissé visible où il peut être lu par quiconque.</p>
+      <p>Cela comprend les messages téléphoniques, les impressions d'ordinateur, les lettres et autres documents. Tout le matériel contenant des informations confidentielles doit être hébergé dans un environnement sécurisé.</p>
+      <p>Des précautions de sécurité doivent être prises conformément à la politique et aux procédures de Neologic Webrunning.</p>
+      <h3><u>9. LES MÉDIAS</u></h3>
+      <p>Les informations confidentielles ne doivent pas être transmises à des membres de la presse ou à d'autres médias sans le consentement écrit de son supérieur hiérarchique d'au moins le niveau 4 et dans un but particulier.</p>
+      <p>Toutes les demandes des médias doivent être traitées dans le cadre de la procédure de traitement des demandes des médias de Neologic Webrunning.</p>
+      <h3><u>10. ELIMINATION DES INFORMATIONS</u></h3>
+      <p>Tous les supports contenant des informations confidentielles doivent être éliminés de manière à garantir que les informations ne sont pas divulguées à une personne non autorisée.</p>
+
+
+    </div>
+
+	<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Plan du site</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="notre_histoire.html">Notre Histoire</a></li>
+            <li><a href="fiches_metiers.html">Nos fiches Métiers</a></li>
+            <li><a href="services.html">Nos Services</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Qui sommes nous?</h4>
+          <ul>
+            <li><a href="confidalite.html">Mentions légales</a></li>
+          
+            <li><a href="mention.html">Politique de confidentialité</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Recherche</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Suivez nous sur</h4>
+          <div class="social-links">
+            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/campaignmanager/login"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Whitedukecmr/projetsfichesmetiers"><i class="fab fa-github"></i></a>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div><p><hr style="font-weight: bold;">©️-2021|NEOLOGICWEBRUNNING.com</p></div>
+  </footer>
+
+    <div class="cookie-container">
+    <p>
+      NEOLOGIC WEBRUNNING utilise des cookies et vous donne le controle sur ce que vous souhaitez activer. Lire notre <a href="mention.html">Politique de confidentialité</a>
+    </p>
+    <button class="cookie-btn">
+      ✔️Tout accepter
+    </button>
+    <button class="btn-cookie">
+      ✖️Refuser
+    </button>
+    <button class="cookie-btn" onclick="document.getElementById('box').style.display='block'">
+      <a>Personnaliser</a>
+    </button>
+    <div id="box">
+      <div class="disparition" id="modale">
+        <h2><center>Panneau de gestion des cookies</center></h2>
+        <p style="line-height: 1em;">Sur ce site, nous utilisons des cookies pour mesurer notre audiance, entretenir la relation avec vous et vous addresser de temps à autre du contenu qualitif ainsi que de la publicité. Vous pouvez sélectionner ici ce que vous autorisez à rester.</p>
+        <p><h4>Gérer les préférences de consentement :</h4></p>
+        <ul id="overflowTest">
+          <li>
+            <b class="pliable">+ Cookies de réseaux sociaux :</b>
+            <div class="contenu">
+            <p>Ces cookies permettent de vous proposer des contenus en provenance de réseaux sociaux. Refuser le dépôt de ces cookies est sans conséquence pour votre navigation sur notre site. En revanche, l'utilisation des fonctionnalités concernées sera rendu impossible.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾LinkedIn</ol>
+              <ol>◾Twitter</ol>
+              <ol>◾Facebook</ol>
+              <ol>◾Indeed</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+           
+          </li>
+          <li>
+            <b class="pliable">+ Cookies de ciblage :</b>
+            <div class="contenu">
+            <p>Ces cookies peuvent être installés via notre site par nos partenaires publicitaires. Ils peuvent être utilisés par ces sociétés pour établir un profil de vos intérêts et vous montrer des publicités pertinentes sur d'autres sites. Ils ne stockent pas directement d'informations personnelles, mais sont basés sur l'identification unique de votre navigateur et de votre appareil Internet. Si vous n'autorisez pas ces cookies, vous bénéficierez d'une publicité moins ciblée.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾First Party Cookies</ol>
+              <ol style="color: blue;">◾preferencechoice.com</ol>
+              <ol style="color: blue;">◾IAdvize.com</ol>
+              <ol>◾Googles Analytics</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies fonctionnels :</b>
+            <div class="contenu">
+            <p>Ces cookies permettent au site Web de fournir des fonctionnalités et une personnalisation améliorées. Ils peuvent être définis par nous ou par des fournisseurs tiers dont nous avons ajouté les services à nos pages. Si vous n'autorisez pas ces cookies, certains ou tous ces services peuvent ne pas fonctionner correctement.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu" style="color: blue;">
+              <ol>◾Google.com</ol>
+              <ol>◾Bing.com</ol>
+              <ol>◾Yahoo.com</ol>
+              <ol>◾Eloqua.com</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies de performances :</b>
+            <div class="contenu">
+            <p>Ces cookies nous permettent de compter les visites et les sources de trafic, afin que nous puissions mesurer et améliorer les performances de notre site. Ils nous aident à savoir quelles pages sont les plus et les moins populaires et à voir comment les visiteurs se déplacent sur le site. Toutes les informations collectées par ces cookies sont agrégées et donc anonymes. Si vous n'autorisez pas ces cookies, nous ne saurons pas quand vous avez visité notre site.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾Aha!</ol>
+              <ol>◾Glaze</ol>
+              <ol>◾Cookiepedia</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies strictement nécessaires</b>
+            <div class="contenu">
+            <p>Ces cookies déposés pour le compte de Neologic Webrunning sont nécessaires au bon fonctionnement de notre site web et ne peuvent pas être désactivés.</p>
+            <p>Ils permettent :</p>
+            <ol>◾Le maintien de votre session et votre authentification ;</ol>
+            <ol>◾La conservation de votre choix sur le dépôt des cookies ;</ol>
+            <ol>◾La mesure statistique visant à l'amélioration des performances de notre site.</ol>
+            <p>Vous avez la possibilité de configurer votre navigateur pour refuser le dépôt de ces cookies, mais la navigation sur le site sera dégradée.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾Hotjar</ol>
+              <ol>◾AB Tasty</ol>
+              <ol>◾Content Square</ol>
+              <ol>◾Qualitrics</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+                  <input type="checkbox" checked="checked">
+                    <span class="sliders rounds"></span>
+                </label>
+                <b style="color: blue;">Toujours actif</b>
+               
+              </div>
+          </li>
+          </ul>
+        <a onclick="document.getElementById('box').style.display='none'">✖️</a>
+        <div class="modale-footer">
+          <p><button type="button" onclick="document.getElementById('box').style.display='none'" class="footer-btn" style="float: right; font-size: 20px;">Confirmer</button></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <script>
+    var coll = document.getElementsByClassName("pliable");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var contenu = this.nextElementSibling;
+        if (contenu.style.display === "block") {
+          contenu.style.display = "none";
+        } else {
+          contenu.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <script>
+    // je recupere le modal
+    var modal = document.getElementById('box');
+
+    // Lorsque l'utilisateur clique sur confirmer la modale se ferme
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="main2.js"></script>
+  <script type="text/javascript" src="main3.js"></script>
+</body>
+</html>

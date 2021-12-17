@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;700 & display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body 
+{
+  font-family: Verdana;
+  padding: 40px;
+  background: #f1f1f1;
+  line-height: 1.5;
+ 
+}
+
+.header 
+{
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: ;
+  background: #FFFFFF;
+  color: white;
+}
+
+/* Style de la barre de navigation topnav */
+.topnav 
+{
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style des liens topnav */
+.topnav a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* la couleur du topnav */
+.topnav a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+/*Barre de navigation recherche*/
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+/*listes deroulantes*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.slider{
+  width: 100%;
+  overflow: hidden;
+}
+
+.contents {
+  width: calc(600px * 4);
+  animation: glisse 10s infinite;
+}
+
+.content {
+  float: left;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-600px);
+  }
+  50% {
+    transform: translateX(-1200px);
+  }
+  75% {
+    transform: translateX(-1800px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+.content>img {
+width: 600px;
+height: 300px;
+}
+
+.footer {
+  padding: 15px ;
+  background: #ccc;
+  margin-top: 15px;
+  display: grid;
+}
+p{
+  font-family: "Roboto", sans-serif;
+  margin:10px;
+  line-height: 2;
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-weight: 500;
+  position: relative;
+
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: ;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: blue;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: blue;
+}
+ /*responsive*/
+ @media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+ }
+
+ @media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+ }
+ul{
+  list-style: none;
+
+}
+/* cookies*/
+.cookie-container{
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 100ms;
+}
+.cookie-container.active {
+  bottom: 0;
+}
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cookie-btn:hover {
+  background: rgba(47, 54, 64, 0.39);
+}
+.btn-cookie{
+ background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cookie-btn a:link {
+text-decoration: none;}
+.btn-cookie:hover {
+ background: rgba(47, 54, 64, 0.39); 
+}
+/* fenêtre modale*/
+#box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(55, 55, 55, 0.5);
+  display: none;
+}
+#box:target {
+display: block;
+}
+#modale a {
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#modale h2, #modale p, #modale h4, #modale li {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#modale {
+  background-color: #ecf0f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 5px;
+  border-radius: 6px;
+  width: 600px;
+
+}
+#modale ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+
+}
+#modale ul li {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 15px;
+}
+#modale-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #c0c0c0;
+}
+#modale-footer button {
+  font-size: 20px;
+}
+/*Toggle switch*/
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliders {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliders:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#modale input:checked + .sliders {
+  background-color: #2196F3;
+}
+
+#modale input:focus + .sliders {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+#modale input:checked + .sliders:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.sliders.rounds {
+  border-radius: 17px;
+}
+
+.sliders.rounds:before {
+  border-radius: 50%;
+}
+.contenu {
+  padding: 0 20px;
+  display: none;
+  overflow: hidden;
+  
+  border: 1px dotted black;
+}
+.contenu p{
+  margin: 20px;
+  line-height: 1;
+}
+.contenu p a {
+  display: block;
+}
+#overflowTest {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 590px;
+ border: 1px solid #ccc;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 395px;
+}
+/*la barre des media icon-bar*/
+.icon-bar {
+  position: fixed;
+  right: 0px;
+  -webkit-transform: translateY(38%);
+  -ms-transform: translateY(38%);
+  transform: translateY(38%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.github {
+  background: #555;
+  color: white;
+}
+
+.rss {
+  background: #000;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}

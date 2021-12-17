@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nos Fiches Métiers</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+  @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;700 & display=swap');
+		* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family : 'Poppins', sans-serif ;
+  padding: 40px;
+  background:#ddd;
+  line-height: 1.5;
+  
+}
+.head {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  color: white;
+}
+
+/* Style de la barre de navigation topnav */
+.topnav 
+{
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style des liens topnav */
+.topnav a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* la couleur du topnav */
+.topnav a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+/*Barre de navigation recherche*/
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/*listes deroulantes*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.footer{
+  background-color: #ffffff;
+  padding: 20px;
+  text-align:;
+  margin-top: 15px;
+  
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-weight: 500;
+  position: relative;
+
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #blue;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: blue;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: blue;
+}
+ /*responsive*/
+ @media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+ }
+
+ @media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+ }
+ul{
+  list-style: none;
+
+}
+
+
+ #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+/*formulaires*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*la barre des media icon-bar*/
+.icon-bar {
+  position: fixed;
+  right: 0px;
+  -webkit-transform: translateY(38%);
+  -ms-transform: translateY(38%);
+  transform: translateY(38%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.github {
+  background: #555;
+  color: white;
+}
+
+.rss {
+  background: #000;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+	</style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/neologic11.png" width="100%">
+      <h1></h1>
+  </div>
+<div class="topnav">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Accueil</a>
+      <a href="notre_histoire.html">Notre Histoire</a>
+      <div class="dropdown">
+        <button class="dropbtn">Nos fiches métiers <i class="fa fa-caret-down"></i></button>
+         <div class="dropdown-content">
+        <a href="fiches_metiers.html">Metier du Piratage</a>
+        <a href="fiches_metiers.html">Metier du Web</a>
+        <a href="fiches_metiers.html">Metier des Réseaux</a>
+        </div>
+      </div> 
+        <a href="services.html">Services</a>
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+
+    <div class="search-container">
+      <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-fw fa-search"></i>Rechercher</button>
+      </form>
+    </div>
+
+  </div>
+
+       <div class="icon-bar">
+      <a href="https://github.com/Whitedukecmr/projetsfichesmetiers" class="github"><i class="fa fa-github"></i></a> 
+      <a href="#" class="rss"><i class="fa fa-rss"></i></a> 
+      <a href="https://www.google.fr/" class="google"><i class="fa fa-google"></i></a> 
+      <a href="https://www.linkedin.com/campaignmanager/login" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a> 
+       </div>
+
+    <div class="head">
+    <h2 style="color:#003366"><center><div><u> Bienvenue sur l'onglet contact.</u></div></center></h2>
+    <p>
+      <h3 style="color:#003366"><p>Nous sommes joignables 7J/7 Contactez nos spécialistes au 01 88 62 36 03.</p>
+       <p>Pour les problèmes techniques privilégiez l'ouverture d'un ticket d'incidence depuis votre espace client.</p>
+      </h3>
+    </p>
+
+  </div>
+  <div>
+ <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Prénom</label>
+    <input type="text" id="fname" name="Prénom" placeholder="Votre prenom..">
+
+    <label for="lname">Nom</label>
+    <input type="text" id="lname" name="Nom" placeholder="Votre nom..">
+
+    <label for="fname">Adresse email</label>
+    <input type="text" id="fname" name="email" placeholder="Votre émail..">
+
+    <label for="fname">Adresse</label>
+    <input type="text" id="fname" name="adresse" placeholder="Votre lieu de résidence..">
+
+    <label for="fname">Numero de Télephone</label>
+    <input type="text" id="fname" name="numero" placeholder="Votre n° tel..">
+
+    <label for="country">Pays</label>
+    <select id="country" name="country">
+      <option value="australia">France</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Sujet</label>
+    <textarea id="subject" name="subject" placeholder="Ecrivez quelque chose.." style="height:200px"></textarea>
+
+    <input type="submit" value="Soumettre">
+  </form>
+</div>
+ </div>
+
+
+	<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Plan du site</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="notre_histoire.html">Notre Histoire</a></li>
+            <li><a href="fiches_metiers.html">Nos fiches Métiers</a></li>
+            <li><a href="services.html">Nos Services</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Qui sommes nous?</h4>
+          <ul>
+            <li><a href="confidalite.html">Mentions légales</a></li>
+      
+            <li><a href="mention.html">Politique de confidentialité</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Recherche</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Suivez nous sur</h4>
+          <div class="social-links">
+            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/campaignmanager/login"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Whitedukecmr/projetsfichesmetiers"><i class="fab fa-github"></i></a>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div><p><hr style="font-weight: bold;">©️-2021|NEOLOGICWEBRUNNING.com</p></div>
+  </footer>
+</body>
+</html>

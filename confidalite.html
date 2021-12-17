@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nos Fiches Métiers</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+  @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;700 & display=swap');
+		* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family : 'Poppins', sans-serif ;
+  padding: 40px;
+  background:#ddd;
+  line-height: 1.5;
+  
+}
+.head {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  color: white;
+}
+
+/* Style de la barre de navigation topnav */
+.topnav 
+{
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style des liens topnav */
+.topnav a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* la couleur du topnav */
+.topnav a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+/*Barre de navigation recherche*/
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/*listes deroulantes*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.footer{
+  background-color: #ffffff;
+  padding: 20px;
+  text-align:;
+  margin-top: 15px;
+  
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-weight: 500;
+  position: relative;
+
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #blue;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: blue;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: blue;
+}
+ /*responsive*/
+ @media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+ }
+
+ @media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+ }
+ul{
+  list-style: none;
+
+}
+
+
+ #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+.rgpd h2 {
+  text-align: center;
+}
+.rgpd {
+  margin: 25px;
+  padding: 25px;
+}
+/* cookies*/
+.cookie-container{
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 100ms;
+}
+.cookie-container.active {
+  bottom: 0;
+}
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cookie-btn:hover {
+  background: rgba(47, 54, 64, 0.39);
+}
+.btn-cookie{
+ background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cookie-btn a:link {
+text-decoration: none;}
+.btn-cookie:hover {
+ background: rgba(47, 54, 64, 0.39); 
+}
+/* fenêtre modale*/
+#box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(55, 55, 55, 0.5);
+  display: none;
+}
+#box:target {
+display: block;
+}
+#modale a {
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#modale h2, #modale p, #modale h4, #modale li {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#modale {
+  background-color: #ecf0f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 5px;
+  border-radius: 6px;
+  width: 600px;
+
+}
+#modale ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+
+}
+#modale ul li {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 15px;
+}
+#modale-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #c0c0c0;
+}
+#modale-footer button {
+  font-size: 20px;
+} 
+/*Toggle switch*/
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliders {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliders:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#modale input:checked + .sliders {
+  background-color: #2196F3;
+}
+
+#modale input:focus + .sliders {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+#modale input:checked + .sliders:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.sliders.rounds {
+  border-radius: 17px;
+}
+
+.sliders.rounds:before {
+  border-radius: 50%;
+}
+.contenu {
+  padding: 0 20px;
+  display: none;
+  overflow: hidden;
+  
+  border: 1px dotted black;
+}
+.contenu p{
+  margin: 20px;
+  line-height: 1;
+}
+.contenu p a {
+  display: block;
+}
+#overflowTest {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 590px;
+ border: 1px solid #ccc;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 395px;
+}
+
+	</style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/neologic11.png" width="100%">
+      <h1></h1>
+  </div>
+   <div class="topnav">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Accueil</a>
+      <a href="notre_histoire.html">Notre Histoire</a>
+      <div class="dropdown">
+        <button class="dropbtn">Nos fiches métiers <i class="fa fa-caret-down"></i></button>
+         <div class="dropdown-content">
+        <a href="fiches_metiers.html">Metier du Piratage</a>
+        <a href="fiches_metiers.html">Metier du Web</a>
+        <a href="fiches_metiers.html#adminreseau">Metier des Réseaux</a>
+        </div>
+      </div>
+      <a href="services.html">Services</a>
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-fw fa-search"></i>Rechercher</button>
+      </form>
+    </div>
+
+  </div>
+	<div class="head">
+		<h1 style="color:#006666"><center><b>Mentions légales du site WebRunning</b></center></h1>
+		<p>
+      <h3 style="color:#003366">Il est important que nous vous informions quelles données personnelles sont collectées lorsque vous utilisez notre site Web et nos produits, de la manière dont elles sont traitées et des droits dont vous disposez à cet égard. Dans les informations suivantes relatives à la protection des données, nous résumons ces informations pour vous.</h3>
+		</p>
+	</div>
+  <div class="rgpd" style="background-color: #f0f8ff;">
+    <h2>Article 1 - Mentions légales</h2>
+    <h3>1.1 Informations sur la collecte des données personnelles</h3>
+    <p>Responsable selon l'art. 4 par. 7 du règlement général sur la protection des données (RGPD) de l'UE est : </p>
+    <ol>◾L'entreprise indivuduelle NEOLOGIG WEBRUNNING</ol>
+    <ol>◾située : 20 Rue Montgalet , 75015</ol>
+    <ol>◾immatriculée au RCS de 123456789</ol>
+    <ol>◾n° de téléphone : 01 88 62 36 03</ol>
+    <ol>◾adresse mail : confidentialite@neologicwebrunning</ol>
+    
+    <h3>1.2 Hébergeur (ci-après « l'hébergeur ») : </h3>
+    <p>Neologic Webrunning est hébergé par IONOS SARL Service protection des données situé au 7 place de la Gare - BP 70109 57201 SARREGUEMINES.</p>
+    <h2>Article 2 - Accès au site</h2>
+    <p>L'accès au site et son utilisation sont réservés à un usage strictement personnel. Vous vous engagez à ne pas 
+    utiliser ce site et les informations ou données qui y figurent à des fins commerciales, politiques, publicitaires 
+      et pour toute forme de sollicitation commerciale et notamment l'envoi de courriers électroniques non  sollicités.</p>
+    <h2>Article 3 - Contenu du site</h2>
+       <p>Toutes les marques, photographies, textes, commentaires, illustrations, images animées ou non, séquences 
+        vidéo, sons, ainsi que toutes les applications informatiques qui pourraient être utilisées pour faire fonctionner 
+        ce site et plus généralement tous les éléments reproduits ou utilisés sur le site sont protégés par les lois en 
+        vigueur au titre de la propriété intellectuelle.</p>
+        <p>Ils sont la propriété pleine et entière de l'éditeur ou de ses partenaires. Toute reproduction, représentation, 
+        utilisation ou adaptation, sous quelque forme que ce soit, de tout ou partie de ces éléments, y compris les 
+        applications informatiques, sans l'accord préalable et écrit de l'éditeur, sont strictement interdites. Le fait 
+        pour l'éditeur de ne pas engager de procédure dès la prise de connaissance de ces utilisations non autorisées 
+        ne vaut pas acceptation desdites utilisations et renonciation aux poursuites.</p>
+    <h2>Article 4 - Gestion du site</h2>
+    <p>Pour la bonne gestion du site, l'éditeur pourra à tout moment :</p>
+      <ol>- suspendre, interrompre ou limiter l'accès à tout ou partie du site, réserver l'accès au site, ou à certaines parties du site, à une catégorie déterminée d'internautes ;</ol>
+      <ol>- supprimer toute information pouvant en perturber le fonctionnement ou entrant en contravention avec les lois nationales ou internationales ;</ol>
+      <ol>- suspendre le site afin de procéder à des mises à jour.</ol>
+      <h2>Article 5 - Responsabilités</h2>
+      <p>La responsabilité de l'éditeur ne peut être engagée en cas de défaillance, panne, difficulté ou interruption de 
+      fonctionnement, empêchant l'accès au site ou à une de ses fonctionnalités.
+      Le matériel de connexion au site que vous utilisez est sous votre entière responsabilité. Vous devez prendre 
+      toutes les mesures appropriées pour protéger votre matériel et vos propres données notamment d'attaques 
+      virales par Internet. Vous êtes par ailleurs seul responsable des sites et données que vous consultez.</p>
+      <p>L'éditeur ne pourra être tenu responsable en cas de poursuites judiciaires à votre encontre :</p>
+      <ol>◾Du fait de l'usage du site ou de tout service accessible via Internet ;</ol>
+      <ol>◾du fait du non-respect par vous des présentes conditions générales.</ol>
+      
+        <p>L'éditeur n'est pas responsable des dommages causés à vous-même, à des tiers et/ou à votre équipement du 
+        fait de votre connexion ou de votre utilisation du site et vous renoncez à toute action contre lui de ce fait.
+        Si l'éditeur venait à faire l'objet d'une procédure amiable ou judiciaire en raison de votre utilisation du site, il 
+        pourra se retourner contre vous pour obtenir l'indemnisation de tous les préjudices, sommes, condamnations 
+        et frais qui pourraient découler de cette procédure.
+        </p>
+        <h2>Article 6 - Liens hypertextes</h2>
+        <p>La mise en place par les utilisateurs de tous liens hypertextes vers tout ou partie du site est strictement 
+        interdite, sauf autorisation préalable et écrite de l'éditeur.</p>
+        <p>L'éditeur est libre de refuser cette autorisation sans avoir à justifier de quelque manière que ce soit sa 
+        décision.</p><p> Dans le cas où l'éditeur accorderait son autorisation, celle-ci n'est dans tous les cas que temporaire 
+        et pourra être retirée à tout moment, sans obligation de justification à la charge de l'éditeur.</p>
+        <p>Toute information accessible via un lien vers d'autres sites n'est pas publiée par l'éditeur. L'éditeur ne dispose 
+        d'aucun droit sur le contenu présent dans ledit lien. </p>
+        <h2>Article 7 - Collecte et protection des données</h2>
+        <p>Une donnée à caractère personnel désigne toute information concernant une personne physique identifiée ou 
+      identifiable (personne concernée) ; est réputée identifiable une personne qui peut être identifiée, directement 
+      ou indirectement, notamment par référence à un nom, un numéro d'identification ou à un ou plusieurs 
+      éléments spécifiques, propres à son identité physique, physiologique, génétique, psychique, économique, 
+      culturelle ou sociale.</p>
+      <p>Les informations personnelles pouvant être recueillies sur le site sont principalement utilisées par l'éditeur 
+      pour la gestion des relations avec vous, et le cas échéant pour le traitement de vos commandes.</p>
+      <p>Les données personnelles collectées sont les suivantes :</p>
+      <ol>◾ nom et prénom</ol>
+      <ol>◾adresse</ol>
+      <ol>◾ adresse mail</ol>
+      <ol>◾numéro de téléphone</ol>
+      <ol>◾données financières : dans le cadre du paiement des produits et prestations proposés sur la Plateforme, celleci enregistre des données financières relatives à la carte de crédit de l'utilisateur.</ol>
+      <ol>◾Pages Web précédentes (URL de référence) </ol>
+      <ol>◾Adresse IP </ol>
+      <ol>◾Système d'exploitation </ol>
+      <ol>◾Cookies</ol>
+      <ol>◾La date et les paramètres de la langue</ol>
+      <ol>◾Résolution de l'écran</ol>
+      <h2>Article 8 - Droit d’accès, de rectification et de déréférencement de vos données</h2>
+      <p>En application de la réglementation applicable aux données à caractère personnel, les utilisateurs disposent des droits suivants :</p>
+      <li>le droit d’accès : ils peuvent exercer leur droit d'accès, pour connaître les données personnelles les 
+      concernant, en écrivant à l'adresse électronique ci-dessous mentionnée. Dans ce cas, avant la mise en 
+      œuvre de ce droit, la Plateforme peut demander une preuve de l'identité de l'utilisateur afin d'en 
+      vérifier l'exactitude ;</li>
+            <li>le droit de rectification : si les données à caractère personnel détenues par la Plateforme sont inexactes, 
+      ils peuvent demander la mise à jour des informations ;</li>
+            <li>le droit de suppression des données : les utilisateurs peuvent demander la suppression de leurs données 
+      à caractère personnel, conformément aux lois applicables en matière de protection des données ;</li>
+            <li>le droit à la limitation du traitement : les utilisateurs peuvent de demander à la Plateforme de limiter le 
+      traitement des données personnelles conformément aux hypothèses prévues par le RGPD ;</li>
+            <li>le droit à la portabilité : ils peuvent réclamer que la Plateforme leur remette les données personnelles 
+      qu'ils ont fournies pour les transmettre à une nouvelle Plateforme.</li>
+      <ol>Vous pouvez exercer ce droit en nous contactant, à l’adresse suivante :</ol>
+      <ol>20 Rue Montgalet , Paris 75015 </ol>
+      <ol>Ou par émail au :confidentialite@neologicwebrunning </ol>
+      <p>Toute demande doit être accompagnée de la photocopie d’un titre d’identité en cours de validité signé et 
+      faire mention de l’adresse à laquelle l'éditeur pourra contacter le demandeur. La réponse sera adressée dans 
+      le mois suivant la réception de la demande. Ce délai d'un mois peut être prolongé de deux mois si la 
+      complexité de la demande et/ou le nombre de demandes l'exigent.</p>
+      <p>De plus, et depuis la loi n°2016-1321 du 7 octobre 2016, les personnes qui le souhaitent, ont la possibilité d’
+      organiser le sort de leurs données après leur décès. Pour plus d’information sur le sujet, vous pouvez 
+      consulter le site Internet de la CNIL :<a href="https://www.cnil.fr/">https://www.cnil.fr/</a>.</p>
+      <p>Les utilisateurs peuvent aussi introduire une réclamation auprès de la CNIL sur le site de la CNIL :<a href="https://www.cnil.fr/">https://www.cnil.fr/</a>.</p>
+      <p>Nous vous recommandons de nous contacter dans un premier temps avant de déposer une réclamation auprès 
+        de la CNIL, car nous sommes à votre entière disposition pour régler votre problème. </p>
+      <h2>Article 9 - Utilisation des données</h2>
+      <p>Les données personnelles collectées auprès des utilisateurs ont pour objectif la mise à disposition des 
+        services de la Plateforme, leur amélioration et le maintien d'un environnement sécurisé. La base légale des 
+        traitements est l’exécution du contrat entre l’utilisateur et la Plateforme. Plus précisément, les utilisations 
+        sont les suivantes :</p>
+        <ol>➖accès et utilisation de la Plateforme par l'utilisateur ;</ol>
+        <ol>➖gestion du fonctionnement et optimisation de la Plateforme ;</ol>
+        <ol>➖mise en œuvre d'une assistance utilisateurs ;</ol>
+        <ol>➖vérification, identification et authentification des données transmises par l'utilisateur ;</ol>
+        <ol>➖personnalisation des services en affichant des publicités en fonction de l'historique de navigation de l'utilisateur, selon ses préférences ;</ol>
+        <ol>➖prévention et détection des fraudes, malwares (malicious softwares ou logiciels malveillants) et gestion des incidents de sécurité ;</ol>
+        <ol>➖gestion des éventuels litiges avec les utilisateurs ;</ol>
+        <ol>➖envoi d'informations commerciales et publicitaires, en fonction des préférences de l'utilisateur ;</ol>
+        <ol>➖organisation des conditions d'utilisation des Services de paiement.</ol>
+        <h2>Article 10 - Politique de conservation des données</h2>
+        <p>La Plateforme conserve vos données pour la durée nécessaire pour vous fournir ses services ou son assistance.</p> 
+          <p>Dans la mesure raisonnablement nécessaire ou requise pour satisfaire aux obligations légales ou 
+          réglementaires, régler des litiges, empêcher les fraudes et abus ou appliquer nos modalités et conditions, 
+          nous pouvons également conserver certaines de vos informations si nécessaire, même après que vous ayez 
+          fermé votre compte ou que nous n'ayons plus besoin pour vous fournir nos services.</p>
+          <h2>Article 11- Partage des données personnelles avec des tiers</h2>
+          <p>Les données personnelles peuvent être partagées avec des sociétés tierces exclusivement dans l’Union européenne, dans les cas suivants :</p>
+        <ol>➖quand l'utilisateur utilise les services de paiement, pour la mise en œuvre de ces services, la Plateforme est 
+        en relation avec des sociétés bancaires et financières tierces avec lesquelles elle a passé des contrats ;</ol>
+                <ol>➖lorsque l'utilisateur publie, dans les zones de commentaires libres de la Plateforme, des informations 
+        accessibles au public ;</ol>
+                <ol>➖quand l'utilisateur autorise le site web d'un tiers à accéder à ses données ;</ol>
+                <ol>➖quand la Plateforme recourt aux services de prestataires pour fournir l'assistance utilisateurs, la publicité et 
+        les services de paiement. Ces prestataires disposent d'un accès limité aux données de l'utilisateur, dans le 
+        cadre de l'exécution de ces prestations, et ont l'obligation contractuelle de les utiliser en conformité avec les 
+        dispositions de la réglementation applicable en matière protection des données à caractère personnel ;</ol>
+        <ol>➖si la loi l'exige, la Plateforme peut effectuer la transmission de données pour donner suite aux réclamations présentées contre la Plateforme et se conformer aux procédures administratives et judiciaires.</ol>
+        <h2>Article 12 - Offres commerciales</h2>
+        <p>Vous êtes susceptible de recevoir des offres commerciales de l'éditeur. Si vous ne le souhaitez pas, veuillez cliquer sur le lien suivant :<a href="contact.html">confidentialite@neologicwebrunning</a></p>
+        <p>Vos données sont susceptibles d’être utilisées par les partenaires de l'éditeur à des fins de prospection commerciale, si vous ne le souhaitez pas, veuillez cliquer sur le lien suivant :<a href="contact.html">confidentialite@neologicwebrunning</a></p>
+        <p>Si, lors de la consultation du site, vous accédez à des données à caractère personnel, vous devez vous 
+          abstenir de toute collecte, de toute utilisation non autorisée et de tout acte pouvant constituer une atteinte à la 
+          vie privée ou à la réputation des personnes. L'éditeur décline toute responsabilité à cet égard.
+          Les données sont conservées et utilisées pour une durée conforme à la législation en vigueur.
+          </p>
+          <h2>Article 13 - Cookies</h2>
+          <p>Qu’est-ce qu’un <b>« cookie »</b> ?</p>
+          <p>Un « Cookie » ou traceur est un fichier électronique déposé sur un terminal (ordinateur, tablette, smartphone,…) et lu par exemple lors de la consultation d'un site internet, de la lecture d'un courrier électronique, de l'installation ou de l'utilisation d'un logiciel ou d'une application mobile et ce, quel que soit le type de terminal utilisé <a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi">(source : https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi).</a></p>
+          <p>Le site peut collecter automatiquement des informations standards. Toutes les informations collectées indirectement ne 
+        seront utilisées que pour suivre le volume, le type et la configuration du trafic utilisant ce site, pour en développer la 
+        conception et l'agencement et à d'autres fins administratives et de planification et plus généralement pour améliorer le 
+        service que nous vous offrons.
+        </p>
+        <p>Le cas échéant, des « cookies » émanant de l'éditeur du site et/ou des sociétés tiers pourront être déposés sur votre terminal, avec votre accord.</p>
+        <p>Dans ce cas, lors de la première navigation sur ce site, une bannière explicative sur l’utilisation des « cookies » apparaîtra.</p>
+        <p>Avant de poursuivre la navigation, le client et/ou le prospect devra accepter ou refuser l’utilisation desdits « cookies ». Le consentement donné sera valable pour une période de treize (13) mois. L'utilisateur a la possibilité de désactiver les cookies à tout moment.</p>
+        <p>Les cookies suivants sont présents sur ce site : </p>
+        <ol>
+          ➖<b>Cookies de réseaux sociaux:</b>
+          <p>Ces cookies peuvent être installés via notre site par nos partenaires publicitaires. Ils peuvent être utilisés par ces sociétés pour établir un profil de vos intérêts et vous montrer des publicités pertinentes sur d'autres sites. Ils ne stockent pas directement d'informations personnelles, mais sont basés sur l'identification unique de votre navigateur et de votre appareil Internet. Si vous n'autorisez pas ces cookies, vous bénéficierez d'une publicité moins ciblée.</p>
+        </ol>
+        <ol>
+          ➖<b>Cookies de ciblage:</b>
+          <p>Ces cookies nous permettent de compter les visites et les sources de trafic, afin que nous puissions mesurer et améliorer les performances de notre site. Ils nous aident à savoir quelles pages sont les plus et les moins populaires et à voir comment les visiteurs se déplacent sur le site. Toutes les informations collectées par ces cookies sont agrégées et donc anonymes. Si vous n'autorisez pas ces cookies, nous ne saurons pas quand vous avez visité notre site</p>
+        </ol>
+        <ol>
+          ➖<b>Cookies fonctionnels:</b>
+          <p>Ces cookies permettent au site Web de fournir des fonctionnalités et une personnalisation améliorées. Ils peuvent être définis par nous ou par des fournisseurs tiers dont nous avons ajouté les services à nos pages. Si vous n'autorisez pas ces cookies, certains ou tous ces services peuvent ne pas fonctionner correctement.</p>
+        </ol>
+        <ol>
+          ➖<b>Cookies de performances:</b>
+          <p>Ces cookies nous permettent d’obtenir des statistiques de fréquentation et d’utilisation du site, afin d’en mesurer et d’en améliorer les performances en optimisant son ergonomie, sa navigation et ses contenus. Ils nous aident à connaître le nombre de visites, le nombre de pages vues et les sources de trafic, mais aussi à identifier où les utilisateurs arrivent et quittent notre site, quel est leurs parcours dans notre site et comment il est utilisé. Ils nous permettent également d’obtenir des statistiques à propos de la localisation géographique des utilisateurs (région, ville), du type d’appareil utilisé ainsi que des centres d’intérêt des utilisateurs. En désactivant ces cookies, nous ne pourrons pas analyser le trafic du site dans le but de l’optimiser.</p>
+        </ol>
+        <ol>
+          ➖<b>Cookies strictement nécessaires:</b>
+          <p>Ces cookies sont nécessaires au fonctionnement du site Web et ne peuvent pas être désactivés dans nos systèmes. Ils ne sont généralement définis qu'en réponse à des actions de votre part qui équivalent à une demande de services, telles que la définition de vos préférences de confidentialité, la connexion ou le remplissage de formulaires. Vous pouvez paramétrer votre navigateur pour bloquer ou vous alerter sur ces cookies, mais certaines parties du site ne fonctionneront alors pas. Ces cookies ne stockent aucune information personnellement identifiable.</p>
+        </ol>
+        <h2>Article 14 - Photographies et représentation des produits</h2>
+        <p>Les photographies de produits, accompagnant leur description, ne sont pas contractuelles et n'engagent pas l'éditeur.</p>
+        <h2>Article 15 - Loi applicable</h2>
+        <p>Les présentes conditions d'utilisation du site sont régies par la loi française et soumises à la compétence des 
+          tribunaux du siège social de l'éditeur, sous réserve d'une attribution de compétence spécifique découlant d'un 
+          texte de loi ou réglementaire particulier.</p>
+        <h2>Article 16 - Contactez-nous</h2>
+        <p>Pour toute question, information sur les produits présentés sur le site, ou concernant le site lui-même, vous 
+          pouvez laisser un message à l'adresse suivante : confidentialite@neologicwebrunning</p>
+
+
+
+
+    </div>
+
+	<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Plan du site</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="notre_histoire.html">Notre Histoire</a></li>
+            <li><a href="fiches_metiers.html">Nos fiches Métiers</a></li>
+            <li><a href="services.html">Nos Services</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Qui sommes nous?</h4>
+          <ul>
+            <li><a href="confidalite.html">Mentions légales</a></li>
+            
+            <li><a href="mention.html">Politique de confidentialité</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Recherche</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Suivez nous sur</h4>
+          <div class="social-links">
+            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/campaignmanager/login"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Whitedukecmr/projetsfichesmetiers"><i class="fab fa-github"></i></a>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div><p><hr style="font-weight: bold;">©️-2021|NEOLOGICWEBRUNNING.com</p></div>
+  </footer>
+
+  <div class="cookie-container">
+    <p>
+      NEOLOGIC WEBRUNNING utilise des cookies et vous donne le controle sur ce que vous souhaitez activer. Lire notre <a href="mention.html">Politique de confidentialité</a>
+    </p>
+    <button class="cookie-btn">
+      ✔️Tout accepter
+    </button>
+    <button class="btn-cookie">
+      ✖️Refuser
+    </button>
+    <button class="cookie-btn" onclick="document.getElementById('box').style.display='block'">
+      <a>Personnaliser</a>
+    </button>
+    <div id="box">
+      <div class="disparition" id="modale">
+        <h2><center>Panneau de gestion des cookies</center></h2>
+        <p style="line-height: 1em;">Sur ce site, nous utilisons des cookies pour mesurer notre audiance, entretenir la relation avec vous et vous addresser de temps à autre du contenu qualitif ainsi que de la publicité. Vous pouvez sélectionner ici ce que vous autorisez à rester.</p>
+        <p><h4>Gérer les préférences de consentement :</h4></p>
+        <ul id="overflowTest">
+          <li>
+            <b class="pliable">+ Cookies de réseaux sociaux :</b>
+            <div class="contenu">
+            <p>Ces cookies permettent de vous proposer des contenus en provenance de réseaux sociaux. Refuser le dépôt de ces cookies est sans conséquence pour votre navigation sur notre site. En revanche, l'utilisation des fonctionnalités concernées sera rendu impossible.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾LinkedIn</ol>
+              <ol>◾Twitter</ol>
+              <ol>◾Facebook</ol>
+              <ol>◾Indeed</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+           
+          </li>
+          <li>
+            <b class="pliable">+ Cookies de ciblage :</b>
+            <div class="contenu">
+            <p>Ces cookies peuvent être installés via notre site par nos partenaires publicitaires. Ils peuvent être utilisés par ces sociétés pour établir un profil de vos intérêts et vous montrer des publicités pertinentes sur d'autres sites. Ils ne stockent pas directement d'informations personnelles, mais sont basés sur l'identification unique de votre navigateur et de votre appareil Internet. Si vous n'autorisez pas ces cookies, vous bénéficierez d'une publicité moins ciblée.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾First Party Cookies</ol>
+              <ol style="color: blue;">◾preferencechoice.com</ol>
+              <ol style="color: blue;">◾IAdvize.com</ol>
+              <ol>◾Googles Analytics</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies fonctionnels :</b>
+            <div class="contenu">
+            <p>Ces cookies permettent au site Web de fournir des fonctionnalités et une personnalisation améliorées. Ils peuvent être définis par nous ou par des fournisseurs tiers dont nous avons ajouté les services à nos pages. Si vous n'autorisez pas ces cookies, certains ou tous ces services peuvent ne pas fonctionner correctement.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu" style="color: blue;">
+              <ol>◾Google.com</ol>
+              <ol>◾Bing.com</ol>
+              <ol>◾Yahoo.com</ol>
+              <ol>◾Eloqua.com</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies de performances :</b>
+            <div class="contenu">
+            <p>Ces cookies nous permettent de compter les visites et les sources de trafic, afin que nous puissions mesurer et améliorer les performances de notre site. Ils nous aident à savoir quelles pages sont les plus et les moins populaires et à voir comment les visiteurs se déplacent sur le site. Toutes les informations collectées par ces cookies sont agrégées et donc anonymes. Si vous n'autorisez pas ces cookies, nous ne saurons pas quand vous avez visité notre site.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾Aha!</ol>
+              <ol>◾Glaze</ol>
+              <ol>◾Cookiepedia</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+              <input type="checkbox" checked="checked">
+                <span class="sliders rounds"></span>
+               </label>
+               <b>Autoriser</b>
+               <b style="float: right;">Refuser</b>
+               <label class="switch" style="transform: translate(150px);">
+                  <input type="checkbox">
+                    <span class="sliders rounds"></span>
+                
+               </label>
+           </div>
+          </li>
+          <li>
+            <b class="pliable">+ Cookies strictement nécessaires</b>
+            <div class="contenu">
+            <p>Ces cookies déposés pour le compte de Neologic Webrunning sont nécessaires au bon fonctionnement de notre site web et ne peuvent pas être désactivés.</p>
+            <p>Ils permettent :</p>
+            <ol>◾Le maintien de votre session et votre authentification ;</ol>
+            <ol>◾La conservation de votre choix sur le dépôt des cookies ;</ol>
+            <ol>◾La mesure statistique visant à l'amélioration des performances de notre site.</ol>
+            <p>Vous avez la possibilité de configurer votre navigateur pour refuser le dépôt de ces cookies, mais la navigation sur le site sera dégradée.</p>
+            <b class="pliable" >🖲️Détails sur les cookies</b>
+            <div class="contenu">
+              <ol>◾Hotjar</ol>
+              <ol>◾AB Tasty</ol>
+              <ol>◾Content Square</ol>
+              <ol>◾Qualitrics</ol>
+            </div>
+          </div>
+            <div style="text-align: center;">
+            <label class="switch">
+                  <input type="checkbox" checked="checked">
+                    <span class="sliders rounds"></span>
+                </label>
+                <b style="color: blue;">Toujours actif</b>
+               
+              </div>
+          </li>
+          </ul>
+        <a onclick="document.getElementById('box').style.display='none'">✖️</a>
+        <div class="modale-footer">
+          <p><button type="button" onclick="document.getElementById('box').style.display='none'" class="footer-btn" style="float: right; font-size: 20px;">Confirmer</button></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <script>
+    var coll = document.getElementsByClassName("pliable");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var contenu = this.nextElementSibling;
+        if (contenu.style.display === "block") {
+          contenu.style.display = "none";
+        } else {
+          contenu.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <script>
+    // je recupere le modal
+    var modal = document.getElementById('box');
+
+    // Lorsque l'utilisateur clique sur confirmer la modale se ferme
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="main2.js"></script>
+  <script type="text/javascript" src="main3.js"></script>
+</body>
+</html>
